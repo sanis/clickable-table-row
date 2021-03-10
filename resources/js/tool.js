@@ -47,7 +47,7 @@ Nova.booting((Vue, router, store) => {
               const columns = document.querySelectorAll('table[data-testid="resource-table"] tr[dusk$="-row"] td')
 
               for (const column of columns) {
-                  if (column.querySelector('.trigger')) {
+                  if (column.querySelector('.vue-js-switch') || column.querySelector('.trigger')) {
                       continue;
                   }
 
